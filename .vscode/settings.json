@@ -1,0 +1,143 @@
+{
+    // Установка темы значков Material Design (удобно для визуальной идентификации типов файлов и папок)
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Установка цветовой темы Atom One Dark (популярная тёмная тема с приятным контрастом)
+    "workbench.colorTheme": "Atom One Dark",
+
+    // Рисует вертикальную линию в редакторе на 79-м символе, чтобы соблюдать ограничения длины строки (удобно для PEP 8)
+    "editor.rulers": [100],
+
+    // Включает мини-карту справа от редактора, показывающую структуру файла
+    "editor.minimap.enabled": true,
+
+    // Отключает анимацию мини-карты для ускорения работы
+    "editor.minimap.showSlider": "always",
+
+    // Плавная прокрутка в редакторе (делает прокрутку текста более приятной)
+    "editor.smoothScrolling": true,
+
+    // Показывать пробелы, табуляции и скрытые символы (полезно при проверке форматирования)
+    "editor.renderWhitespace": "all",
+
+    // Показывает номер строки и столбца в правом нижнем углу
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "smooth",
+
+    // Автоматически сохраняет файл при переключении на другое окно (избавляет от необходимости сохранять вручную)
+    "files.autoSave": "onFocusChange",
+
+    "python.defaultInterpreterPath": ".venv/bin/python",
+
+    "files.exclude": {
+        "**/.git": false
+    },
+
+    "[python]": {
+        // Указывает, что для Python используется форматтер Black
+        "editor.defaultFormatter": "ms-python.black-formatter",
+
+        // Включает автоматическое форматирование файла при сохранении
+        "editor.formatOnSave": true,
+
+        // Автоматически упорядочивает импорты при сохранении (удаляет неиспользуемые импорты и сортирует их)
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    // Включает предупреждения об ошибках типизации (Type Hints) при работе с Python
+    // "python.analysis.typeCheckingMode": "strict",
+
+    // Включает автодополнение для модулей, которые автоматически импортируются (например, стандартные модули Python)
+    "python.analysis.autoImportCompletions": true,
+
+    // Включает автоматическое добавление скобок после автодополнения функции (ускоряет написание кода)
+    "python.analysis.completeFunctionParens": true,
+
+    // Настройки терминала
+    "terminal.integrated.defaultProfile.linux": "zsh", // Укажите zsh для Linux
+    "terminal.integrated.defaultProfile.windows": "PowerShell", // На Windows всё остаётся как есть
+    "terminal.integrated.defaultProfile.macOS": "zsh", // Укажите zsh для macOS
+
+    // Включает панель терминала на нижнем экране
+    "terminal.integrated.fontSize": 14, // Увеличивает шрифт в терминале
+    "terminal.integrated.cursorBlinking": true, // Включает мигание курсора
+
+    // Указывает Flake8, что конфигурация линтера находится в файле pyproject.toml
+    "flake8.args": [
+        "--config=${workspaceFolder}/pyproject.toml"
+    ],
+
+    "files.associations": {
+        "*.toml": "toml"  // Указывает, что все файлы с расширением .toml — это TOML
+    },
+    "editor.defaultFormatter": "tamasfe.even-better-toml",  // Использование Even Better TOML как форматтера
+        "[toml]": {
+            "editor.defaultFormatter": "tamasfe.even-better-toml",
+            "editor.formatOnSave": true  // Автоматическое форматирование при сохранении
+    },
+
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                // Заголовки таблиц, например: [tool.black]
+                "scope": "support.type.property-name.table",
+                "settings": {
+                    "foreground": "#61AFEF" // Голубой цвет (Atom One Dark Blue)
+                }
+            },
+            {
+                // Названия массивов, например: src_paths = ["blogicum"]
+                "scope": "support.type.property-name.array",
+                "settings": {
+                    "foreground": "#E5C07B" // Желтый цвет (Atom One Dark Yellow)
+                }
+            },
+            {
+                // Строковые значения, например: "E501", "tests/"
+                "scope": "string.quoted.double",
+                "settings": {
+                    "foreground": "#98C379" // Зеленый цвет (Atom One Dark Green)
+                }
+            },
+            {
+                // Числовые значения, например: timeout = 2
+                "scope": "constant.numeric",
+                "settings": {
+                    "foreground": "#D19A66" // Оранжевый цвет (Atom One Dark Orange)
+                }
+            },
+            {
+                // Булевы значения, например: true, false
+                "scope": "constant.language.boolean",
+                "settings": {
+                    "foreground": "#C678DD" // Фиолетовый цвет (Atom One Dark Purple)
+                }
+            },
+            {
+                // Временные значения, например: 2025-01-01T12:00:00Z
+                "scope": "constant.other.time",
+                "settings": {
+                    "foreground": "#56B6C2" // Бирюзовый цвет (Atom One Dark Cyan)
+                }
+            },
+            {
+                // Ключи (параметры), например: max-line-length, addopts
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#ABB2BF" // Серо-белый цвет (нейтральный основной текст)
+                }
+            },
+            {
+                // Комментарии, например: # Игнорирование длинных строк
+                "scope": "comment.line.number-sign",
+                "settings": {
+                    "foreground": "#5C6370", // Серый цвет для комментариев
+                    "fontStyle": "italic"    // Курсив для комментариев
+                }
+            }
+        ]
+    },
+    "cursorpyright.analysis.autoImportCompletions": true,
+}
