@@ -33,7 +33,7 @@ def linear_regression_gradient_descent(
     w = np.zeros((n, 1))
     y = y.reshape(-1, 1)
 
-    for i in range(0, iterations):
+    for _ in range(0, iterations):
         grad = (X.T @ (X @ w - y)) / m
         w -= alpha * grad
 
