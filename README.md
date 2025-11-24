@@ -8,21 +8,21 @@ https://www.deep-ml.com/collections/Machine%20Learning
 
 - 1.1 Matrix-Vector Dot Product - Done
 - 1.2 Transpose of a Matrix - Done
-- 1.3 Dot Product Calculator
-- 1.4 Scalar Multiplication of a Matrix
-- 1.5 Calculate Cosine Similarity Between Vectors
+- 1.3 Dot Product Calculator - Done
+- 1.4 Scalar Multiplication of a Matrix - Done
+- 1.5 Calculate Cosine Similarity Between Vectors - Done
 - 1.6 Calculate Mean by Row or Column
-- 1.7 Calculate Eigenvalues of a Matrix
+- 1.7 Calculate Eigenvalues of a Matrix - Done
 - 1.8 Calculate 2x2 Matrix Inverse
 - 1.9 Matrix times Matrix
 
 ## 2. Probability and Statistics
 
-- 2.1 Poisson Distribution Probability Calculator
-- 2.2 Binomial Distribution Probability
-- 2.3 Normal Distribution PDF Calculator
+- 2.1 Poisson Distribution Probability Calculator - Done
+- 2.2 Binomial Distribution Probability - Done
+- 2.3 Normal Distribution PDF Calculator - Done
 - 2.4 Descriptive Statistics Calculator
-- 2.5 Calculate Covariance Matrix
+- 2.5 Calculate Covariance Matrix  - Done
 
 ## 3. Optimization Techniques
 - 3.1 Linear Regression Using Gradient Descent - Done
@@ -42,7 +42,7 @@ https://www.deep-ml.com/collections/Machine%20Learning
 - 4.9 Implement K-Fold Cross-Validation - Done
 - 4.10 Calculate Performance Metrics for a Classification Model - Not
 - 4.11 Implementation of Log Softmax Function
-- 4.12 Implement ReLU Activation Function
+- 4.12 Implement ReLU Activation Function - Done
 
 ## 5. Classification & Regression Techniques
 - 5.1 Linear Regression Using Normal Equation - Done
@@ -51,7 +51,7 @@ https://www.deep-ml.com/collections/Machine%20Learning
 - 5.4 Calculate Jaccard Index for Binary Classification
 - 5.5 Pegasos Kernel SVM Implementation
 - 5.6 Implement AdaBoost Fit Method
-- 5.7 Softmax Activation Function Implementation
+- 5.7 Softmax Activation Function Implementation - Done
 
 ## 6. Unsupervised Learning
 - 6.1 KL Divergence Between Two Normal Distributions
@@ -60,10 +60,10 @@ https://www.deep-ml.com/collections/Machine%20Learning
 
 ## 7. Deep Learning
 - 7.1 Single Neuron
-- 7.2 Sigmoid Activation Function Understanding
-- 7.3 Softmax Activation Function Implementation
+- 7.2 Sigmoid Activation Function Understanding - Done
+- 7.3 Softmax Activation Function Implementation - Done
 - 7.4 Implementation of Log Softmax Function
-- 7.5 Implement ReLU Activation Function
+- 7.5 Implement ReLU Activation Function - Done
 - 7.6 Simple Convolutional 2D Layer
 - 7.7 Implementing a Simple RNN
 
