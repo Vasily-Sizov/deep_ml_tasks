@@ -10,3 +10,7 @@ wheels/
 .venv
 
 avito.py
+
+.DS_Store
+env.md
+.mypy_cache
